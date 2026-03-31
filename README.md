@@ -1,61 +1,61 @@
-# Târgu Neamț - Tourism Website
+# Târgu Neamț - Website Turistic
 
-## Description
+## Descriere
 
-Official website for promoting tourism in the town of Târgu Neamț, Neamț County, Romania. The site showcases tourist attractions, local events, and provides useful information for visitors.
+Website oficial pentru promovarea turismului în orașul Târgu Neamț, judetul Neamț, România. Site-ul prezintă atrakțiile turistice, evenimentele locale și oferă informații utile pentru vizitatori.
 
-## Technologies
+## Tehnologii
 
-- **React** - UI Framework
-- **TypeScript** - Programming Language
-- **Tailwind CSS** - Styling
-- **Vite** - Build Tool
-- **Lucide React** - Icons
+- **React** - Framework UI
+- **TypeScript** - Limbaj de programare
+- **Tailwind CSS** - Stilizare
+- **Vite** - Build tool
+- **Lucide React** - Iconuri
 
-## Project Structure
+## Structura Proiectului
 
 ```
 src/
-├── components/       # React Components
-│   ├── ui/          # UI Components (shadcn)
-│   └── *.tsx       # Main Components
-├── pages/           # Pages
-├── hooks/           # Custom Hooks
-├── lib/             # Utilities
-└── assets/          # Images and Resources
+├── components/       # Componente React
+│   ├── ui/          # Componente UI (shadcn)
+│   └── *.tsx       # Componente principale
+├── pages/           # Pagini
+├── hooks/           # Hooks custom
+├── lib/             # Utilități
+└── assets/          # Imagini și resurse
 ```
 
-## Installation
+## Instalare
 
 ```bash
-# Install dependencies
+# Instalează dependențele
 npm install
 
-# Run in development mode
+# Rulează în mod dezvoltare
 npm run dev
 
-# Build for production
+# Build pentru producție
 npm run build
 ```
 
-## Features
+## Funcționalități
 
-- Tourist Attractions Showcase
-- Events Calendar
-- Photo Gallery
-- Interactive Map
-- Contact Form
-- Responsive Design (mobile, tablet, desktop)
-- Developer Section with Social Links
+- Prezentare atrakții turistice
+- Calendar evenimente
+- Galerie foto
+- Hartă interactivă
+- Formular de contact
+- Design responsiv (mobile, tablet, desktop)
+- Secțiune dezvoltator cu link-uri sociale
 
-## License
+## Licență
 
-This project is licensed under MIT License - see the LICENSE file for details.
+Acest proiect este licențiat sub MIT License - vezi fișierul LICENSE pentru detalii.
 
-## Author
+## Autor
 
-Site developed with passion for promoting local tourism in Târgu Neamț.
+Site dezvoltat cu pasiune pentru promovarea turismului local din Târgu Neamț.
 
 ## Contact
 
-For questions or suggestions, contact us through the form on the website or through social media.
+Pentru întrebări sau sugestii, contactează-ne prin formularul de pe site sau prin rețelele sociale.
