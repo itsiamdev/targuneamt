@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { MessageCircle, X, Send, Bot, User } from "lucide-react";
+import { MessageCircle, X, Bot, User } from "lucide-react";
 
 interface Message {
   id: string;
@@ -240,16 +240,7 @@ function getBotResponse(query: string): string {
 
   return `Mulțumesc pentru întrebare! 😊
 
-Sunt aici să vă ajut cu informații despre Târgu Neamț. Puteți să mă întrebați despre:
-
-🏰 Atracții turistice
-🕐 Program de vizitare
-🎟️ Prețuri bilete
-📍 Cum ajungeți
-🎉 Evenimente locale
-📞 Informații de contact
-
-Sau selectați una dintre opțiunile rapide de mai jos!`;
+Sunt aici să vă ajut cu informații despre Târgu Neamț. Puteți selecta una dintre opțiunile rapide de mai jos!`;
 }
 
 const Chatbot = () => {
@@ -262,7 +253,6 @@ const Chatbot = () => {
       timestamp: new Date(),
     },
   ]);
-  const [inputValue, setInputValue] = useState("");
   const [isTyping, setIsTyping] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
@@ -274,23 +264,19 @@ const Chatbot = () => {
     scrollToBottom();
   }, [messages, isTyping]);
 
-  const handleSend = (text?: string) => {
-    const messageText = text || inputValue.trim();
-    if (!messageText) return;
-
+  const handleSend = (query: string) => {
     const userMessage: Message = {
       id: Date.now().toString(),
-      text: messageText,
+      text: query,
       sender: "user",
       timestamp: new Date(),
     };
 
     setMessages((prev) => [...prev, userMessage]);
-    setInputValue("");
     setIsTyping(true);
 
     setTimeout(() => {
-      const botResponse = getBotResponse(messageText);
+      const botResponse = getBotResponse(query);
       const botMessage: Message = {
         id: (Date.now() + 1).toString(),
         text: botResponse,
@@ -299,14 +285,7 @@ const Chatbot = () => {
       };
       setMessages((prev) => [...prev, botMessage]);
       setIsTyping(false);
-    }, 800 + Math.random() * 700);
-  };
-
-  const handleKeyDown = (e: React.KeyboardEvent) => {
-    if (e.key === "Enter" && !e.shiftKey) {
-      e.preventDefault();
-      handleSend();
-    }
+    }, 500);
   };
 
   const formatMessageText = (text: string) => {
@@ -427,8 +406,9 @@ const Chatbot = () => {
             </div>
 
             {/* Quick Replies */}
-            <div className="px-4 py-2 border-t border-border/50 bg-background shrink-0">
-              <div className="flex gap-2 overflow-x-auto pb-2 scrollbar-hide">
+            <div className="px-4 py-3 border-t border-border/50 bg-background shrink-0">
+              <p className="text-xs text-muted-foreground mb-2">Întrebări frecvente:</p>
+              <div className="flex flex-wrap gap-2 max-h-32 overflow-y-auto">
                 {quickReplies.map((reply) => (
                   <button
                     key={reply.query}
@@ -438,28 +418,6 @@ const Chatbot = () => {
                     {reply.label}
                   </button>
                 ))}
-              </div>
-            </div>
-
-            {/* Input */}
-            <div className="p-4 border-t border-border/50 bg-background shrink-0">
-              <div className="flex gap-2 items-end">
-                <textarea
-                  value={inputValue}
-                  onChange={(e) => setInputValue(e.target.value)}
-                  onKeyDown={handleKeyDown}
-                  placeholder="Scrie un mesaj..."
-                  rows={1}
-                  className="flex-1 resize-none rounded-xl border border-border/50 bg-muted/50 px-4 py-2.5 text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-transparent max-h-20"
-                />
-                <button
-                  onClick={() => handleSend()}
-                  disabled={!inputValue.trim() || isTyping}
-                  className="w-10 h-10 rounded-xl bg-primary text-primary-foreground flex items-center justify-center hover:bg-primary/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed shrink-0"
-                  aria-label="Trimite mesaj"
-                >
-                  <Send className="w-4 h-4" />
-                </button>
               </div>
             </div>
           </motion.div>
