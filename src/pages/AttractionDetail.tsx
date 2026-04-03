@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useParams, useNavigate } from 'react-router-dom';
 import Navbar from '@/components/Navbar';
@@ -149,6 +150,10 @@ const AttractionDetail = () => {
   const { slug } = useParams();
   const navigate = useNavigate();
   const attraction = slug ? attractionsData[slug as keyof typeof attractionsData] : null;
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   if (!attraction) {
     return (
