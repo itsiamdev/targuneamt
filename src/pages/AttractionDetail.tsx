@@ -120,7 +120,12 @@ De-a lungul secolelor, Mănăstirea Neamț a jucat un rol crucial în păstrarea
       'Acces': 'Gratuit',
       'Donatii': 'Opțional',
     },
-    gallery: [manastireaNemt, manastireaNemt, manastireaNemt],
+    gallery: [
+      '/manastirea neamt/img1.png',
+      '/manastirea neamt/img2.png',
+      '/manastirea neamt/img3.png',
+      '/manastirea neamt/img4.png',
+    ],
   },
   'agapia': {
     title: 'Mănăstirea Agapia',
