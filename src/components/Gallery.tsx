@@ -2,9 +2,9 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import casaCreanga from '@/assets/images/casa-creanga.jpg';
 import manastireaNemt from '@/assets/images/manastirea-neamt.jpg';
-import agapia from '@/assets/images/agapia.jpg';
-import varatec from '@/assets/images/varatec.jpg';
-import museum from '@/assets/images/museum.jpg';
+import agapia from '/manastirea agapia/img1.png';
+import varatec from '/manastirea varatec/img1.png';
+import museum from '/muzeul de istorie si etnografie/img1.png';
 
 const Gallery = () => {
   const [ref, inView] = useInView({

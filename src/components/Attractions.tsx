@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import AttractionCard from './AttractionCard';
-import museum from '@/assets/images/museum.jpg';
 
 const Attractions = () => {
   const [ref, inView] = useInView({
@@ -49,7 +48,7 @@ const Attractions = () => {
       title: 'Muzeul de Istorie și Etnografie',
       description:
         'Muzeu care prezintă bogata moștenire istorică și culturală a zonei Neamț, cu exponate ce acoperă perioada de la preistorie până în epoca modernă.',
-      image: museum,
+      image: '/muzeul de istorie si etnografie/img1.png',
       slug: 'muzeu-istorie',
     },
   ];

@@ -229,6 +229,7 @@ Secția etnografică prezintă costume tradiționale, unelte agricole, obiecte c
       '/muzeul de istorie si etnografie/img7.png',
       '/muzeul de istorie si etnografie/img8.png',
       '/muzeul de istorie si etnografie/img9.png',
+      '/muzeul de istorie si etnografie/img10.png',
     ],
   },
 };
