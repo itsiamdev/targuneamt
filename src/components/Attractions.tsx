@@ -55,7 +55,7 @@ const Attractions = () => {
       title: 'Parcul Cetate',
       description:
         'Parc istoric situat la poalele Cetății Neamțului, cu alei pavate și vegetație seculară. Loc ideal pentru plimbări și priveliști spre cetate.',
-      image: '/parc cetate/img1.png',
+      image: 'public/parc cetate/img1.jpeg',
       slug: 'parc-cetate',
     },
     {
