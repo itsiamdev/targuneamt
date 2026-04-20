@@ -408,6 +408,10 @@ Stadionul este un loc de întâlnire pentru fanii sportului din zonă și contri
     },
     gallery: [
       '/stadion cetate/img1.png',
+      '/stadion cetate/img2.png',
+      '/stadion cetate/img3.png',
+      '/stadion cetate/img4.png',
+      '/stadion cetate/img5.png',
     ],
   },
   'statuia-ion-creanga': {
