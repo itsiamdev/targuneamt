@@ -482,6 +482,13 @@ Traseele turistice din parc oferă oportunități de drumeție și登山, cu pun
     },
     gallery: [
       '/parcul natural vanatori-neamt/img1.png',
+      '/parcul natural vanatori-neamt/img2.png',
+      '/parcul natural vanatori-neamt/img3.png',
+      '/parcul natural vanatori-neamt/img4.png',
+      '/parcul natural vanatori-neamt/img5.png',
+      '/parcul natural vanatori-neamt/img6.png',
+      '/parcul natural vanatori-neamt/img7.png',
+      '/parcul natural vanatori-neamt/img8.png',
     ],
   },
 };
