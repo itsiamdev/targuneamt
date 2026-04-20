@@ -356,6 +356,10 @@ Biserica este un centru important de spiritualitate pentru comunitatea localÄƒ È
     },
     gallery: [
       '/biserica adormirii maicii domnului/img1.png',
+      '/biserica adormirii maicii domnului/img2.png',
+      '/biserica adormirii maicii domnului/img3.png',
+      '/biserica adormirii maicii domnului/img4.png',
+      '/biserica adormirii maicii domnului/img5.png',
     ],
   },
   'casa-culturi-ion-creanga': {

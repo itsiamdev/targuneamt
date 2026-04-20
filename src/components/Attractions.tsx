@@ -92,9 +92,13 @@ const Attractions = () => {
       title: 'Biserica Adormirii Maicii Domnului',
       description:
         'Biserică monument istoric din centrul Târgu Neamțului, cu arhitectură moldovenească tradițională și icoane valoroase.',
-      image: '/biserica adormirii maicii domnului/img1.png',
+      image: 'public/biserica adormirii maicii domnului/img1.png',
       images: [
-        '/biserica adormirii maicii domnului/img1.png',
+        'public/biserica adormirii maicii domnului/img1.png',
+        'public/biserica adormirii maicii domnului/img2.png',
+        'public/biserica adormirii maicii domnului/img3.png',
+        'public/biserica adormirii maicii domnului/img4.png',
+        'public/biserica adormirii maicii domnului/img5.png',
       ],
       slug: 'biserica-adormirii-maicii-domnului',
     },
