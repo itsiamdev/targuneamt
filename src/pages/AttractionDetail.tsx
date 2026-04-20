@@ -311,7 +311,7 @@ Vizitatorii pot vedea în care a scris poeta, prima ediție a operelor sale și 
   'cimitirul-evreiesc': {
     title: 'Cimitirul Evreiesc',
     description: 'Cimitirul evreiesc istoric din Târgu Neamț, cu pietre funerare sculptate și inscripții în ebraică. Mărturie a comunității evreiești importantă din zonă.',
-    image: '/cimitirul evreiesc/img1.png',
+    image: '/cimitirul evreiesc/img1.jpeg',
     fullDescription: `Cimitirul Evreiesc din Târgu Neamț este un sit istoric important, care păstrează memoria comunității evreiești care a trăit în zonă de-a lungul secolelor.
 
 Pietele funerare din cimitir sunt opere de artă, cu inscripții în ebraică și elemente simbolice specifice tradiției iudaice. Unele datează din secolul XVIII și oferă informații valoroase despre comunitatea evreiască din Târgu Neamț.
