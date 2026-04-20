@@ -63,13 +63,29 @@ const Attractions = () => {
       description:
         'Casa memorială a celebrei poete Veronica Micle, soția lui Ion Creangă. Un loc dedicat memoriei marii poete a literaturii române.',
       image: '/casa memoriala veronica micle/img1.png',
+      images: [
+        '/casa memoriala veronica micle/img1.png',
+        '/casa memoriala veronica micle/img2.png',
+        '/casa memoriala veronica micle/img3.png',
+        '/casa memoriala veronica micle/img4.png',
+        '/casa memoriala veronica micle/img5.png',
+      ],
       slug: 'casa-memoriala-veronica-micle',
     },
     {
       title: 'Cimitirul Evreiesc',
       description:
         'Cimitirul evreiesc istoric din Târgu Neamț, cu pietre funerare sculptate și inscripții în ebraică. Mărturie a comunității evreiești importante din zonă.',
-      image: '/cimitirul evreiesc/img1.png',
+      image: '/cimitirul evreiesc/img1.jpeg',
+      images: [
+        '/cimitirul evreiesc/img1.jpeg',
+        '/cimitirul evreiesc/img2.jpeg',
+        '/cimitirul evreiesc/img3.jpeg',
+        '/cimitirul evreiesc/img4.jpeg',
+        '/cimitirul evreiesc/img5.jpeg',
+        '/cimitirul evreiesc/img6.jpeg',
+        '/cimitirul evreiesc/img7.jpeg',
+      ],
       slug: 'cimitirul-evreiesc',
     },
     {
@@ -77,6 +93,9 @@ const Attractions = () => {
       description:
         'Biserică monument istoric din centrul Târgu Neamțului, cu arhitectură moldovenească tradițională și icoane valoroase.',
       image: '/biserica adormirii maicii domnului/img1.png',
+      images: [
+        '/biserica adormirii maicii domnului/img1.png',
+      ],
       slug: 'biserica-adormirii-maicii-domnului',
     },
     {

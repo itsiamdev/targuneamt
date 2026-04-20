@@ -235,7 +235,7 @@ Secția etnografică prezintă costume tradiționale, unelte agricole, obiecte c
   'parc-cetate': {
     title: 'Parcul Cetate',
     description: 'Parc istoric situat la poalele Cetății Neamțului, cu alei pavate și vegetație seculară. Loc ideal pentru plimbări și priveliști spre cetate.',
-    image: '/parc cetate/img1.png',
+    image: '/parc cetate/img1.jpeg',
     fullDescription: `Parcul Cetate este unul dintre cele mai vechi parcuri din Târgu Neamț, situat la poalele Cetății medievale. Parcul a fost amenajat în perioada interbelică și păstrează încă atmosfera acelor vremuri.
 
 Aleile sale pavate sunt înconjurate de copaci seculari, printre care se numără stejari, fagi și castani. Băncile de piatră oferă locuri de odihnă cu vedere spre cetate. În parcul se află mai multe sculpturi și monumente commemorative.
@@ -251,7 +251,32 @@ Parcul este popular atât pentru localnici, cât și pentru turiști, fiind un l
       'Acces': 'Gratuit',
     },
     gallery: [
-      '/parc cetate/img1.png',
+      '/parc cetate/img1.jpeg',
+      '/parc cetate/img2.jpeg',
+      '/parc cetate/img3.jpeg',
+      '/parc cetate/img4.jpeg',
+      '/parc cetate/img5.jpeg',
+      '/parc cetate/img6.jpeg',
+      '/parc cetate/img7.jpeg',
+      '/parc cetate/img8.jpeg',
+      '/parc cetate/img9.jpeg',
+      '/parc cetate/img10.jpeg',
+      '/parc cetate/img11.jpeg',
+      '/parc cetate/img12.jpeg',
+      '/parc cetate/img13.jpeg',
+      '/parc cetate/img14.jpeg',
+      '/parc cetate/img15.jpeg',
+      '/parc cetate/img16.jpeg',
+      '/parc cetate/img17.jpeg',
+      '/parc cetate/img18.jpeg',
+      '/parc cetate/img19.jpeg',
+      '/parc cetate/img20.jpeg',
+      '/parc cetate/img21.jpeg',
+      '/parc cetate/img22.jpeg',
+      '/parc cetate/img23.jpeg',
+      '/parc cetate/img24.jpeg',
+      '/parc cetate/img25.jpeg',
+      '/parc cetate/img26.jpeg',
     ],
   },
   'casa-memoriala-veronica-micle': {
@@ -262,7 +287,7 @@ Parcul este popular atât pentru localnici, cât și pentru turiști, fiind un l
 
 Veronica Micle (1850-1889) a fost una dintre cele mai importante poete ale literaturii române din secolul XIX. Casa păstrează atmosfera sfârșitului de secol XIX, cu mobilă de epocă și obiecte specifice perioadei.
 
-Vizitatorii pot vedea相机 în care a scris poeta, prima ediție a operelor sale și corespondența cu Ion Creangă, soțul său. Casa este un pelerinaj pentru iubitorii literaturii române.`,
+Vizitatorii pot vedea în care a scris poeta, prima ediție a operelor sale și corespondența cu Ion Creangă, soțul său. Casa este un pelerinaj pentru iubitorii literaturii române.`,
     location: 'Târgu Neamț, județul Neamț',
     period: 'Secolul XIX',
     accessibility: 'Muzeu memorial',
@@ -277,6 +302,10 @@ Vizitatorii pot vedea相机 în care a scris poeta, prima ediție a operelor sal
     },
     gallery: [
       '/casa memoriala veronica micle/img1.png',
+      '/casa memoriala veronica micle/img2.png',
+      '/casa memoriala veronica micle/img3.png',
+      '/casa memoriala veronica micle/img4.png',
+      '/casa memoriala veronica micle/img5.png',
     ],
   },
   'cimitirul-evreiesc': {
@@ -298,7 +327,13 @@ Situl este important pentru studiul istoriei locale și pentru păstrarea memori
       'Donatii': 'Opțional',
     },
     gallery: [
-      '/cimitirul evreiesc/img1.png',
+      '/cimitirul evreiesc/img1.jpeg',
+      '/cimitirul evreiesc/img2.jpeg',
+      '/cimitirul evreiesc/img3.jpeg',
+      '/cimitirul evreiesc/img4.jpeg',
+      '/cimitirul evreiesc/img5.jpeg',
+      '/cimitirul evreiesc/img6.jpeg',
+      '/cimitirul evreiesc/img7.jpeg',
     ],
   },
   'biserica-adormirii-maicii-domnului': {

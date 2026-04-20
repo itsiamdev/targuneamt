@@ -4,13 +4,15 @@ import { useNavigate } from 'react-router-dom';
 interface AttractionCardProps {
   title: string;
   description: string;
-  image: string;
+  image?: string;
+  images?: string[];
   index: number;
   slug: string;
 }
 
-const AttractionCard = ({ title, description, image, index, slug }: AttractionCardProps) => {
+const AttractionCard = ({ title, description, image, images, index, slug }: AttractionCardProps) => {
   const navigate = useNavigate();
+  const displayImage = images ? images[0] : image;
 
   return (
     <motion.div
@@ -23,7 +25,7 @@ const AttractionCard = ({ title, description, image, index, slug }: AttractionCa
     >
       <div className="relative h-64 overflow-hidden">
         <motion.img
-          src={image}
+          src={displayImage}
           alt={title}
           className="w-full h-full object-cover"
           whileHover={{ scale: 1.1 }}
