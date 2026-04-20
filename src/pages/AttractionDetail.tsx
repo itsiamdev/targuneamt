@@ -456,6 +456,9 @@ Monumentul este loc de aducere aminte și de ceremonii patriotice, mai ales de Z
     },
     gallery: [
       '/monumentul eroilor/img1.png',
+      '/monumentul eroilor/img2.png',
+      '/monumentul eroilor/img3.png',
+      '/monumentul eroilor/img4.png',
     ],
   },
   'parcul-natural-vanatori-neamt': {
