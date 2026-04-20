@@ -383,6 +383,9 @@ Casa Culturii este un punct de întâlnire pentru artiștii și intelectualii di
     },
     gallery: [
       '/casa culturii ion creanga/img1.png',
+      '/casa culturii ion creanga/img2.png',
+      '/casa culturii ion creanga/img3.png',
+      '/casa culturii ion creanga/img4.png',
     ],
   },
   'stadion-cetate': {
