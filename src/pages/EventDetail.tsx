@@ -116,6 +116,8 @@ const eventsData = {
       '/muzeul de istorie si etnografie/img1.png',
       '/muzeul de istorie si etnografie/img2.png',
       '/muzeul de istorie si etnografie/img3.png',
+      '/muzeul de istorie si etnografie/img4.png',
+      '/muzeul de istorie si etnografie/img5.png',
     ],
   },
   4: {
@@ -151,6 +153,7 @@ const eventsData = {
       '/manastirea agapia/img2.png',
       '/manastirea agapia/img3.png',
       '/manastirea agapia/img4.png',
+      '/manastirea agapia/img5.png',
     ],
   },
   5: {
@@ -185,6 +188,7 @@ const eventsData = {
       '/casa culturii ion creanga/img1.png',
       '/casa culturii ion creanga/img2.png',
       '/casa culturii ion creanga/img3.png',
+      '/casa culturii ion creanga/img4.png',
     ],
   },
   6: {
@@ -193,7 +197,7 @@ const eventsData = {
     location: 'Casa de Cultură',
     category: 'cultural',
     shortDescription: 'Spectacol de Crăciun cu datini și obiceiuri specifice zonei Neamț.',
-    fullDescription: `Spectacolul de Datini și Obiceiuri este un eveniment annual care prezintă tradițiile de iarnă și sărbătorile de Crăciun specifice zonei Neamțului și Moldovei.
+    fullDescription: `Spectacolul de Datini și Obiceiuri este un eveniment anual care prezintă tradițiile de iarnă și sărbătorile de Crăciun specifice zonei Neamțului și Moldovei.
 
     Organized by local cultural groups and schools, the show features:
     - Cântece și dansuri tradiționale de iarnă
@@ -201,7 +205,7 @@ const eventsData = {
     - Povestiri și povești despre Moș Crăciun și urâtul
     - Expoziție de obiecte tradiționale de iarnă
     - Prezentări de artizanat local
-    - Meșteșugari care demonstrează lucrurile tradiionale
+    - Meșteșugari care demonstrează lucrurile tradiționale
 
     Evenimentul este o festivitate de culminare a anualului, care reunește comunitatea locală și vizitatorii într-o atmosferă de bilețel și tradiție.`,
     image: '/casa lui ion creanga/img1.png',
@@ -219,6 +223,7 @@ const eventsData = {
       '/casa lui ion creanga/img2.png',
       '/casa lui ion creanga/img3.png',
       '/casa lui ion creanga/img4.png',
+      '/casa lui ion creanga/img5.png',
     ],
   },
 };
@@ -310,11 +315,11 @@ const EventDetail = () => {
                 <ArrowLeft className="w-4 h-4" />
                 Înapoi la evenimente
               </Button>
-              <h1 className="text-4xl md:text-6xl font-bold text-gradient-nature mb-4">
+               <h1 className="text-4xl md:text-6xl font-bold text-gradient-nature mb-4">
                 {event.title}
               </h1>
               <p className="text-lg text-muted-foreground max-w-2xl">
-                {event.shortDescription}
+                {event.description}
               </p>
             </div>
           </div>
