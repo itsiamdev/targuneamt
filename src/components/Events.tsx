@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Calendar, MapPin, ArrowRight } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 type EventCategory = 'all' | 'cultural' | 'festival' | 'concert';
 
@@ -80,6 +81,7 @@ const filters: { value: EventCategory; label: string }[] = [
 ];
 
 const Events = () => {
+  const navigate = useNavigate();
   const [activeFilter, setActiveFilter] = useState<EventCategory>('all');
   const [ref, inView] = useInView({
     threshold: 0.1,
@@ -168,10 +170,10 @@ const Events = () => {
                   <span>{event.location}</span>
                 </div>
 
-                <button className="w-full py-3 px-4 bg-primary text-primary-foreground rounded-xl font-medium flex items-center justify-center gap-2 hover:opacity-90 transition-colors group/btn">
-                  <span>Vezi detalii</span>
-                  <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
-                </button>
+                 <button className="w-full py-3 px-4 bg-primary text-primary-foreground rounded-xl font-medium flex items-center justify-center gap-2 hover:opacity-90 transition-colors group/btn" onClick={() => navigate(`/evenimente/${event.id}`)}>
+                   <span>Vezi detalii</span>
+                   <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
+                 </button>
               </div>
             </motion.div>
           ))}
