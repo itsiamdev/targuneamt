@@ -494,7 +494,7 @@ Traseele turistice din parc oferă oportunități de drumeție, cu puncte de bel
   'anfiteatrul-cetate': {
     title: 'Anfiteatrul Cetate',
     description: 'Anfiteatrul modern din apropierea Cetății Neamțului, spațiu multifuncțional pentru evenimente culturale, spectacole și concerte. Un loc de întâlnire pentru artiști și comunitate.',
-    image: '/anfiteatrul cetate/img1.png',
+    image: '/anfiteatru cetate/img1.png',
     fullDescription: `Anfiteatrul Cetate este o structură modernă și spectaculoasă situată în imediata apropiere a Cetății Medievale Neamț. Construit cu respect pentru peisajul istoric, anfiteatrul oferă o capacitate de peste 2.000 de locuri și acustică excepțională.
 
 Spațiul multifuncțional găzduiește pe tot parcursul anului evenimente culturale majore: concerte, festivaluri de teatru, spectacole de operă și balet, precum și evenimente comunitare. Designul contemporan se îmbină armonios cu peisajul montan și cu istoria locului.
@@ -512,14 +512,10 @@ Anfiteatrul este dotat cu tehnologie de ultimă generație pentru iluminat și s
       'Evenimente': 'Bilet în funcție de spectacol',
     },
     gallery: [
-      '/anfiteatrul cetate/img1.png',
-      '/anfiteatrul cetate/img2.png',
-      '/anfiteatrul cetate/img3.png',
-      '/anfiteatrul cetate/img4.png',
-      '/anfiteatrul cetate/img5.png',
-      '/anfiteatrul cetate/img6.png',
-      '/anfiteatrul cetate/img7.png',
-      '/anfiteatrul cetate/img8.png',
+      '/anfiteatru cetate/img1.png',
+      '/anfiteatru cetate/img2.png',
+      '/anfiteatru cetate/img3.png',
+      '/anfiteatru cetate/img4.png',
     ],
   },
 };

@@ -141,7 +141,7 @@ const Attractions = () => {
       title: 'Anfiteatrul Cetate',
       description:
         'Anfiteatrul modern din apropierea Cetății Neamțului, spațiu multifuncțional pentru evenimente culturale, spectacole și concerte. Un loc de întâlnire pentru artiști și comunitate.',
-      image: 'public/anfiteatrul cetate/img1.png',
+      image: '/anfiteatru cetate/img1.png',
       slug: 'anfiteatrul-cetate',
     },
   ];
