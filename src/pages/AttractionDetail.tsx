@@ -469,7 +469,7 @@ Monumentul este loc de aducere aminte și de ceremonii patriotice, mai ales de Z
 
 Parcul este renumit pentru programul de reintroducere a zimbrilor, care au fost aduși aici din zonele vestice ale Europei. Vizitatorii pot observa turme de zimbri în libertate, precum și urși, lupi și cervide.
 
-Traseele turistice din parc oferă oportunități de drumeție și登山, cu puncte de belvedere spre masivele montane înconjurătoare. Centrul de vizitatori oferă informații și ghiduri pentru turiști.`,
+Traseele turistice din parc oferă oportunități de drumeție, cu puncte de belvedere spre masivele montane înconjurătoare. Centrul de vizitatori oferă informații și ghiduri pentru turiști.`,
     location: 'Vânători-Neamț, județul Neamț',
     period: 'Arie protejată',
     accessibility: 'Parc natural național',
@@ -489,6 +489,37 @@ Traseele turistice din parc oferă oportunități de drumeție și登山, cu pun
       '/parcul natural vanatori-neamt/img6.png',
       '/parcul natural vanatori-neamt/img7.png',
       '/parcul natural vanatori-neamt/img8.png',
+    ],
+  },
+  'anfiteatrul-cetate': {
+    title: 'Anfiteatrul Cetate',
+    description: 'Anfiteatrul modern din apropierea Cetății Neamțului, spațiu multifuncțional pentru evenimente culturale, spectacole și concerte. Un loc de întâlnire pentru artiști și comunitate.',
+    image: '/anfiteatrul cetate/img1.png',
+    fullDescription: `Anfiteatrul Cetate este o structură modernă și spectaculoasă situată în imediata apropiere a Cetății Medievale Neamț. Construit cu respect pentru peisajul istoric, anfiteatrul oferă o capacitate de peste 2.000 de locuri și acustică excepțională.
+
+Spațiul multifuncțional găzduiește pe tot parcursul anului evenimente culturale majore: concerte, festivaluri de teatru, spectacole de operă și balet, precum și evenimente comunitare. Designul contemporan se îmbină armonios cu peisajul montan și cu istoria locului.
+
+Anfiteatrul este dotat cu tehnologie de ultimă generație pentru iluminat și sunet, facilități pentru artiști și spații verzi amenajate. Este un punct de atracție atat pentru localnici, cât și pentru turiști, oferind experiențe culturale unice într-un cadru natural deosebit.`,
+    location: 'Târgu Neamț, județul Neamț',
+    period: 'Perioada modernă',
+    accessibility: 'Spațiu cultural public',
+    schedule: {
+      'Evenimente': 'Conform programării',
+      'Vizitare': 'Liber - exterior',
+    },
+    admission: {
+      'Acces exterior': 'Gratuit',
+      'Evenimente': 'Bilet în funcție de spectacol',
+    },
+    gallery: [
+      '/anfiteatrul cetate/img1.png',
+      '/anfiteatrul cetate/img2.png',
+      '/anfiteatrul cetate/img3.png',
+      '/anfiteatrul cetate/img4.png',
+      '/anfiteatrul cetate/img5.png',
+      '/anfiteatrul cetate/img6.png',
+      '/anfiteatrul cetate/img7.png',
+      '/anfiteatrul cetate/img8.png',
     ],
   },
 };
