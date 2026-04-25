@@ -148,7 +148,7 @@ const Attractions = ({ limit }) => {
   ];
 
   return (
-    <section id="attractions" className="py-20 md:py-32 bg-muted/30 relative">
+    <section id="attractions" className="py-20 md:py-32 bg-muted/30">
       <div className="container mx-auto px-4">
         <motion.div
           ref={ref}
@@ -165,70 +165,27 @@ const Attractions = ({ limit }) => {
           </p>
         </motion.div>
 
-        <div className="relative">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 overflow-x-auto lg:overflow-visible scroll-smooth pb-4 lg:pb-0">
-            {limit ? allAttractions.slice(0, limit).map((attraction, index) => (
-              <AttractionCard
-                key={attraction.title}
-                title={attraction.title}
-                description={attraction.description}
-                image={attraction.image}
-                slug={attraction.slug}
-                index={index}
-              />
-            )) : allAttractions.map((attraction, index) => (
-              <AttractionCard
-                key={attraction.title}
-                title={attraction.title}
-                description={attraction.description}
-                image={attraction.image}
-                slug={attraction.slug}
-                index={index}
-              />
-            ))}
-          </div>
-          
-          {!limit && allAttractions.length > 6 && (
-            <>
-              <button
-                onClick={() => {
-                  const grid = document.querySelector('.grid');
-                  if (grid) {
-                    grid.scrollBy({ left: -400, behavior: 'smooth' });
-                  }
-                }}
-                className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 bg-background/80 backdrop-blur-sm border border-border rounded-full p-3 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110"
-                aria-label="Scroll left"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary">
-                  <path d="m15 18-6-6 6-6"/>
-                </svg>
-              </button>
-              <button
-                onClick={() => {
-                  const grid = document.querySelector('.grid');
-                  if (grid) {
-                    grid.scrollBy({ left: 400, behavior: 'smooth' });
-                  }
-                }}
-                className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 bg-background/80 backdrop-blur-sm border border-border rounded-full p-3 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110"
-                aria-label="Scroll right"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary">
-                  <path d="m9 18 6-6-6-6"/>
-                </svg>
-              </button>
-            </>
-          )}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {limit ? allAttractions.slice(0, limit).map((attraction, index) => (
+            <AttractionCard
+              key={attraction.title}
+              title={attraction.title}
+              description={attraction.description}
+              image={attraction.image}
+              slug={attraction.slug}
+              index={index}
+            />
+          )) : allAttractions.map((attraction, index) => (
+            <AttractionCard
+              key={attraction.title}
+              title={attraction.title}
+              description={attraction.description}
+              image={attraction.image}
+              slug={attraction.slug}
+              index={index}
+            />
+          ))}
         </div>
-        
-        {!limit && (
-          <div className="mt-8 text-center">
-            <Link to="/atractii" className="btn-gradient px-8 py-3 rounded-full font-medium transition-all hover:scale-105">
-              Mai multe atracții
-            </Link>
-          </div>
-        )}
       </div>
     </section>
   );
