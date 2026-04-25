@@ -27,7 +27,7 @@ const Index = () => {
       <Navbar />
       <Hero />
       <About />
-      <Attractions limit={3} />
+        <Attractions />
       <Events />
       <Map />
       <Gallery />

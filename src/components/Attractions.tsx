@@ -166,7 +166,7 @@ const Attractions = ({ limit }) => {
         </motion.div>
 
         <div className="relative">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 overflow-x-auto lg:overflow-visible scroll-smooth pb-4 lg:pb-0">
             {limit ? allAttractions.slice(0, limit).map((attraction, index) => (
               <AttractionCard
                 key={attraction.title}
