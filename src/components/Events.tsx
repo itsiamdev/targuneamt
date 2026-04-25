@@ -13,7 +13,6 @@ interface LocalEvent {
   location: string;
   category: Exclude<EventCategory, 'all'>;
   description: string;
-  image: string;
 }
 
 const events: LocalEvent[] = [
@@ -24,7 +23,6 @@ const events: LocalEvent[] = [
     location: 'Cetatea Neamțului',
     category: 'festival',
     description: 'Cel mai mare festival medieval din Moldova. Spectacole de jongleri, reconstituiri istorice și torturi medievale autentice.',
-    image: '/cetatea neamt/img7.png',
   },
   {
     id: 2,
@@ -33,7 +31,6 @@ const events: LocalEvent[] = [
     location: 'Mănăstirea Văratec',
     category: 'cultural',
     description: 'Sărbători religioase și culturale la cea mai mare mănăstire de maici din România.',
-    image: '/manastirea varatec/img1.png',
   },
   {
     id: 3,
@@ -42,7 +39,6 @@ const events: LocalEvent[] = [
     location: 'Parcul Central',
     category: 'festival',
     description: 'Descoperă gusturile autentice ale Moldovei: sarmale, plăcinte și vinuri locale.',
-    image: '/muzeul de istorie si etnografie/img1.png',
   },
   {
     id: 4,
@@ -51,7 +47,6 @@ const events: LocalEvent[] = [
     location: 'Mănăstirea Agapia',
     category: 'cultural',
     description: 'Tabără de pictură și arte vizuale pentru tineri, organizată cu artiști renumiți.',
-    image: '/manastirea agapia/img1.png',
   },
   {
     id: 5,
@@ -60,7 +55,6 @@ const events: LocalEvent[] = [
     location: 'Casa de Cultură',
     category: 'concert',
     description: 'Seară de muzică clasică susținută de Orchestra Filarmonică din Iași.',
-    image: '/casa culturii ion creanga/img1.png',
   },
   {
     id: 6,
@@ -69,7 +63,6 @@ const events: LocalEvent[] = [
     location: 'Casa de Cultură',
     category: 'cultural',
     description: 'Spectacol de Crăciun cu datini și obiceiuri specifice zonei Neamț.',
-    image: '/casa lui ion creanga/img1.png',
   },
 ];
 
@@ -133,49 +126,38 @@ const Events = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredEvents.map((event, index) => (
-            <motion.div
-              key={event.id}
-              initial={{ opacity: 0, y: 40 }}
-              animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="group bg-card rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 border border-border"
-            >
-              <div className="relative h-48 overflow-hidden">
-                <motion.img
-                  src={event.image}
-                  alt={event.title}
-                  className="w-full h-full object-cover"
-                  whileHover={{ scale: 1.08 }}
-                  transition={{ duration: 0.4 }}
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </div>
+        <motion.div
+          key={event.id}
+          initial={{ opacity: 0, y: 40 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.5, delay: index * 0.1 }}
+          className="group bg-card rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 border border-border"
+        >
+          <div className="p-6">
+            <div className="flex items-center gap-2 text-sm text-muted-foreground mb-3">
+              <Calendar className="w-4 h-4" />
+              <span>{event.date}</span>
+            </div>
 
-              <div className="p-6">
-                <div className="flex items-center gap-2 text-sm text-muted-foreground mb-3">
-                  <Calendar className="w-4 h-4" />
-                  <span>{event.date}</span>
-                </div>
+            <h3 className="text-xl font-bold text-foreground mb-2 line-clamp-2">
+              {event.title}
+            </h3>
 
-                <h3 className="text-xl font-bold text-foreground mb-2 line-clamp-2">
-                  {event.title}
-                </h3>
+            <p className="text-muted-foreground text-sm mb-4 line-clamp-3">
+              {event.description}
+            </p>
 
-                <p className="text-muted-foreground text-sm mb-4 line-clamp-3">
-                  {event.description}
-                </p>
+            <div className="flex items-center gap-2 text-sm text-muted-foreground mb-5">
+              <MapPin className="w-4 h-4" />
+              <span>{event.location}</span>
+            </div>
 
-                <div className="flex items-center gap-2 text-sm text-muted-foreground mb-5">
-                  <MapPin className="w-4 h-4" />
-                  <span>{event.location}</span>
-                </div>
-
-                 <button className="w-full py-3 px-4 bg-primary text-primary-foreground rounded-xl font-medium flex items-center justify-center gap-2 hover:opacity-90 transition-colors group/btn" onClick={() => navigate(`/evenimente/${event.id}`)}>
-                   <span>Vezi detalii</span>
-                   <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
-                 </button>
-              </div>
-            </motion.div>
+             <button className="w-full py-3 px-4 bg-primary text-primary-foreground rounded-xl font-medium flex items-center justify-center gap-2 hover:opacity-90 transition-colors group/btn" onClick={() => navigate(`/evenimente/${event.id}`)}>
+                    <span>Vezi detalii</span>
+                    <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
+                  </button>
+          </div>
+        </motion.div>
           ))}
         </div>
 
