@@ -1,14 +1,16 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import AttractionCard from './AttractionCard';
+import { Link } from 'react-router-dom';
 
-const Attractions = () => {
+const Attractions = ({ limit }) => {
   const [ref, inView] = useInView({
     threshold: 0.1,
     triggerOnce: true,
   });
 
-  const attractions = [
+  const allAttractions = [
+    
     {
       title: 'Cetatea Neamțului',
       description:
@@ -165,7 +167,16 @@ const Attractions = () => {
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {attractions.map((attraction, index) => (
+          {limit ? allAttractions.slice(0, limit).map((attraction, index) => (
+            <AttractionCard
+              key={attraction.title}
+              title={attraction.title}
+              description={attraction.description}
+              image={attraction.image}
+              slug={attraction.slug}
+              index={index}
+            />
+          )) : allAttractions.map((attraction, index) => (
             <AttractionCard
               key={attraction.title}
               title={attraction.title}
@@ -176,6 +187,14 @@ const Attractions = () => {
             />
           ))}
         </div>
+        
+        {!limit && (
+          <div className="mt-8 text-center">
+            <Link to="/atractii" className="btn-gradient px-8 py-3 rounded-full font-medium transition-all hover:scale-105">
+              Mai multe atracții
+            </Link>
+          </div>
+        )}
       </div>
     </section>
   );

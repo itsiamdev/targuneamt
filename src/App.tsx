@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import AttractionDetail from "./pages/AttractionDetail";
 import EventDetail from "./pages/EventDetail";
+import AttractionsPage from "./pages/Attractions";
 import Chatbot from "./components/Chatbot";
 
 const queryClient = new QueryClient();
@@ -19,6 +20,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/atractii" element={<AttractionsPage />} />
           <Route path="/atractii/:slug" element={<AttractionDetail />} />
           <Route path="/evenimente/:id" element={<EventDetail />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
