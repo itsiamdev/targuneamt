@@ -3,7 +3,6 @@
 ## Quick Links
 
 - [Live Site](https://targuneamt.vercel.app) - Visit the website
-- [GitHub Repository](https://github.com/itsiamdev/targuneamt) - Source code
 - [Report an Issue](https://github.com/itsiamdev/targuneamt/issues) - Contribute to the project
 
 ## Demo
