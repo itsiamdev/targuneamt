@@ -7,13 +7,39 @@ const Footer = () => {
     <footer className="bg-primary text-primary-foreground py-12">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
-          {/* About */}
-          <div>
-            <h3 className="text-xl font-bold mb-4">Târgu Neamț</h3>
-            <p className="text-primary-foreground/80 leading-relaxed">
-              Orașul Legendelor - Descoperă frumusețea și istoria Moldovei în inima Carpaților.
-            </p>
-          </div>
+            {/* About */}
+            <div>
+              <h3 className="text-xl font-bold mb-4">Târgu Neamț</h3>
+              <p className="text-primary-foreground/80 leading-relaxed">
+                Orașul Legendelor - Descoperă frumusețea și istoria Moldovei în inima Carpaților.
+              </p>
+            </div>
+
+            {/* CEO */}
+            <div>
+              <h3 className="text-xl font-bold mb-4">CEO</h3>
+              <p className="text-primary-foreground/80 mb-4">
+                În conducerea organizatiei turistice locală, CEO-ul şi echipa sa lucrează pentru promovarea destinatiei Târgu Neamț.
+              </p>
+              <div className="flex gap-4">
+                <a
+                  href="https://www.linkedin.com/in/ceo-targuneamt"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"
+                  aria-label="LinkedIn CEO"
+                >
+                  <Linkedin className="w-5 h-5" />
+                </a>
+                <a
+                  href="mailto:ceo@targuneamt.ro"
+                  className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"
+                  aria-label="Email CEO"
+                >
+                  <Mail className="w-5 h-5" />
+                </a>
+              </div>
+            </div>
 
            {/* Quick Links */}
            <div>
