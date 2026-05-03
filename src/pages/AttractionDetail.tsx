@@ -477,8 +477,6 @@ Traseele turistice din parc oferă oportunități de drumeție, cu puncte de bel
       '/parcul natural vanatori-neamt/img4.png',
       '/parcul natural vanatori-neamt/img5.png',
       '/parcul natural vanatori-neamt/img6.png',
-      '/parcul natural vanatori-neamt/img7.png',
-      '/parcul natural vanatori-neamt/img8.png',
     ],
   },
   'anfiteatrul-cetate': {
