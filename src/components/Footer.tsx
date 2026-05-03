@@ -15,11 +15,11 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Quick Links */}
-          <div>
-            <h3 className="text-xl font-bold mb-4">Link-uri Rapide</h3>
-            <ul className="space-y-2">
-              {['Acasă', 'Despre', 'Atracții', 'Evenimente', 'Hartă', 'Galerie', 'Întrebări frecvente', 'Contact'].map((item) => (
+           {/* Quick Links */}
+           <div>
+             <h3 className="text-xl font-bold mb-4">Link-uri Rapide</h3>
+             <ul className="space-y-2">
+               {['Acasă', 'Despre', 'Atracții', 'Evenimente', 'Hartă', 'Întrebări frecvente', 'Contact'].map((item) => (
                 <li key={item}>
                   <button
                     onClick={() => {

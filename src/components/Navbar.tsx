@@ -30,7 +30,6 @@ const Navbar = () => {
     { label: 'Evenimente', id: 'events' },
     { label: 'Întrebări frecvente', id: 'faq' },
     { label: 'Hartă', id: 'map' },
-    { label: 'Galerie', id: 'gallery' },
     { label: 'Contact', id: 'contact' },
   ];
 

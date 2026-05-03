@@ -13,12 +13,25 @@ const Gallery = () => {
   });
 
   const images = [
-    { src: '/cetatea neamt/img7.png', alt: 'Cetatea Neamțului' },
-    { src: '/casa lui ion creanga/img1.png', alt: 'Casa Ion Creangă' },
-    { src: '/manastirea neamt/img2.png', alt: 'Mănăstirea Neamț' },
-    { src: agapia, alt: 'Mănăstirea Agapia' },
-    { src: varatec, alt: 'Mănăstirea Văratec' },
-    { src: museum, alt: 'Muzeu' },
+    // Local images
+    { src: '/cetatea neamt/img1.png', alt: 'Cetatea Neamțului - Vista panoramică' },
+    { src: '/casa lui ion creanga/img1.png', alt: 'Casa Ion Creangă - Frontispiciu' },
+    { src: agapia, alt: 'Mănăstirea Agapia - Picturi murale' },
+    { src: varatec, alt: 'Mănăstirea Văratec - Grădini florite' },
+    { src: museum, alt: 'Muzeul de Istorie și Etnografie' },
+    
+    // Internet images of Târgu Neamț
+    { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Cetatea_Neam%C5%A3ului_%28T%C3%A2rgu_Neam%C5%A3%29.jpg/1024px-Cetatea_Neam%C5%A3ului_%28T%C3%A2rgu_Neam%C5%A3%29.jpg', alt: 'Cetatea Neamțului - Wikipedia' },
+    { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Palatul_Culturilor_T%C3%A2rgu_Neam%C5%A3.jpg/1024px-Palatul_Culturilor_T%C3%A2rgu_Neam%C5%A3.jpg', alt: 'Palatul Culturilor Târgu Neamț' },
+    { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Biserica_Din%C4%83tic%C4%83_%28T%C3%A2rgu_Neam%C5%A3%29.jpg/1024px-Biserica_Din%C4%83tic%C4%83_%28T%C3%A2rgu_Neam%C5%A3%29.jpg', alt: 'Biserica Dintrică Târgu Neamț' },
+    { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Parcul_Cetate_T%C3%A2rgu_Neam%C5%A3.jpg/1024px-Parcul_Cetate_T%C3%A2rgu_Neam%C5%A3.jpg', alt: 'Parcul Cetate Târgu Neamț' },
+    { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Monumentul_Eroilor_T%C3%A2rgu_Neam%C5%A3.jpg/1024px-Monumentul_Eroilor_T%C3%A2rgu_Neam%C5%A3.jpg', alt: 'Monumentul Eroilor Târgu Neamț' },
+    { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Strada_Stefan_cel_Mare_Targu_Neamt.jpg/1024px-Strada_Stefan_cel_Mare_Targu_Neamt.jpg', alt: 'Strada Ștefan cel Mare Târgu Neamț' },
+    { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Statua_Ion_Creanga_Targu_Neamt.jpg/1024px-Statua_Ion_Creanga_Targu_Neamt.jpg', alt: 'Statuia lui Ion Creangă Târgu Neamț' },
+    { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Biserica_sf_Treime_Targu_Neamt.jpg/1024px-Biserica_sf_Treime_Targu_Neamt.jpg', alt: 'Biserica Sfânta Treime Târgu Neamț' },
+    { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gr%C4%83din%C4%83_Publica_Targu_Neamt.jpg/1024px-Gr%C4%83din%C4%83_Publica_Targu_Neamt.jpg', alt: 'Grădină Publică Târgu Neamț' },
+    { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Cladirea_Prefecturii_Judet_Neamt.jpg/1024px-Cladirea_Prefecturii_Judet_Neamt.jpg', alt: 'Prefectura Județului Neamț' },
+    { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Gamma_Targu_Neamt_Hotel.jpg/1024px-Gamma_Targu_Neamt_Hotel.jpg', alt: 'Hotel Gamma Târgu Neamț' },
   ];
 
   return (

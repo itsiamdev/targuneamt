@@ -5,7 +5,6 @@ import About from '@/components/About';
 import Attractions from '@/components/Attractions';
 import Events from '@/components/Events';
 import Map from '@/components/Map';
-import Gallery from '@/components/Gallery';
 import DeviceShowcase from '@/components/DeviceShowcase';
 import FAQ from '@/components/FAQ';
 import Contact from '@/components/Contact';
@@ -30,7 +29,6 @@ const Index = () => {
         <Attractions />
       <Events />
       <Map />
-      <Gallery />
       <DeviceShowcase />
       <FAQ />
       <Contact />
