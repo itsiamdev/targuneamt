@@ -15,32 +15,6 @@ const Footer = () => {
               </p>
             </div>
 
-            {/* CEO */}
-            <div>
-              <h3 className="text-xl font-bold mb-4">CEO</h3>
-              <p className="text-primary-foreground/80 mb-4">
-                În conducerea organizatiei turistice locală, CEO-ul şi echipa sa lucrează pentru promovarea destinatiei Târgu Neamț.
-              </p>
-              <div className="flex gap-4">
-                <a
-                  href="https://www.linkedin.com/in/ceo-targuneamt"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"
-                  aria-label="LinkedIn CEO"
-                >
-                  <Linkedin className="w-5 h-5" />
-                </a>
-                <a
-                  href="mailto:ceo@targuneamt.ro"
-                  className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"
-                  aria-label="Email CEO"
-                >
-                  <Mail className="w-5 h-5" />
-                </a>
-              </div>
-            </div>
-
            {/* Quick Links */}
            <div>
              <h3 className="text-xl font-bold mb-4">Link-uri Rapide</h3>
@@ -107,7 +81,7 @@ const Footer = () => {
                 <Github className="w-5 h-5" />
               </a>
               <a
-                href="https://www.linkedin.com/in/ioni%C8%9B%C4%83-aurel-mihai-20648536a/"
+                href="https://www.linkedin.com/in/itsiamdev/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"
