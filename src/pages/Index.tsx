@@ -31,7 +31,7 @@ const Index = () => {
       <Map />
       <DeviceShowcase />
       <FAQ />
-      <Contact />
+
       <Footer />
     </div>
   );
