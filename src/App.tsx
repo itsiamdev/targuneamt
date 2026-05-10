@@ -8,6 +8,7 @@ import NotFound from "./pages/NotFound";
 import AttractionDetail from "./pages/AttractionDetail";
 import EventDetail from "./pages/EventDetail";
 import AttractionsPage from "./pages/Attractions";
+import EventsPage from "./pages/Events";
 import Chatbot from "./components/Chatbot";
 
 const queryClient = new QueryClient();
@@ -22,6 +23,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/atractii" element={<AttractionsPage />} />
           <Route path="/atractii/:slug" element={<AttractionDetail />} />
+          <Route path="/evenimente" element={<EventsPage />} />
           <Route path="/evenimente/:id" element={<EventDetail />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
